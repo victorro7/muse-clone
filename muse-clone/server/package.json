@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "@composio/core": "^0.19.0",
+    "@supabase/supabase-js": "^2.48.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "openai": "^7.22.0",
+    "tsx": "^4.19.2"
+  },
+  "description": "Hosted brain for the Raven mobile app: LLM + Composio tool loop with Supabase persistence and vector memory.",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "typescript": "5.9"
+  },
+  "name": "muse-clone-server",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "version": "1.0.0",
+  "overrides": {
+    "zod": "^3.25.76"
+  }
+}
